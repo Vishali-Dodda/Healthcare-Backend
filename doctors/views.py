@@ -98,7 +98,6 @@ class DoctorDetailView(APIView):
         doctor.delete()
 
         return Response(
-            {"message":"Doctor deleted succesfully."},
             status = status.HTTP_204_NO_CONTENT
         )
     

@@ -106,6 +106,5 @@ class MappingDetailView(APIView):
         mapping.delete()
 
         return Response(
-            {"message": "Mapping deleted successfully."},
             status=status.HTTP_204_NO_CONTENT
         )

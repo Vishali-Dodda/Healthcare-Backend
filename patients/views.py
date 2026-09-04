@@ -104,6 +104,5 @@ class PatientDetailView(APIView):
         patient.delete()
 
         return Response(
-            {"message": "Patient deleted successfully."},
             status=status.HTTP_204_NO_CONTENT
         )
